@@ -1,0 +1,54 @@
+Proyecto:
+Se realiza una base de datos para una app de toma de turnos.
+
+Descripción del Problema:
+Gestión de Clientes y Empleados: Necesitamos una base de datos que nos permita registrar la información de los clientes que realizan reservas de turnos, así como de los empleados involucrados en el proceso de reserva.
+
+Gestión de Tipos de Reserva: Es importante poder clasificar las reservas según su tipo especialidad. Esto nos ayudará a organizar mejor el flujo de trabajo.
+
+Gestión de medicos y Disponibilidad: La base de datos debe permitirnos registrar la disponibilidad de turnos por especialistas, así como gestionar su capacidad y estado (ocupado o disponible). Esto es fundamental para garantizar una asignación eficiente de los turnos.
+
+Objetivo:
+Diseñar e implementar una base de datos relacional que satisfaga todas las necesidades de gestión de reservas para nuestro sistema de gestión de turnos. Esta base de datos deberá ser eficiente, escalable y fácil de mantener, permitiendo una gestión ágil y precisa de todas las operaciones relacionadas con los turnos.
+
+Descripción de la Base de Datos - Gestión de Reservas de turnos.
+Esta base de datos está diseñada para gestionar reservas de turnos, así como la información relacionada con clientes, empleados, especialistas. A continuación se detallan los elementos principales de la base de datos:
+
+Tablas:
+
+PACIENTES:
+
+Almacena información sobre los clientes que realizan reservas.
+Atributos: IDPACIENTE, NOMBRE, TELEFONO, CORREO.
+EMPLEADO:
+
+Contiene información sobre los empleados involucrados en el proceso de reservas.
+Atributos: IDEMPLEADO, NOMBRE, TELEFONO, CORREO..
+
+DUEÑO:
+
+Guarda datos sobre la institucion (no se utiliza explícitamente en el proceso de turnos).
+
+ESPECIALIDAD:
+
+Define diferentes tipos de especialidad para clasificarlas según requisitos específicos.
+
+Atributos: IDESPECIALIDAD.
+
+CLINICA:
+
+Almacena información sobre los medicos disponibles.
+Atributos: IDCLINICA, NOMBRE, DIRECCION, TELEFONO.
+
+TURNO:
+
+Registra los tuenos realizadas por los clientes.
+Atributos: IDTURNO, IDPACIENTE, IDMEDICVO, IDEMPLEADO, IDESPECIALIDAD, FECHA.
+
+Problemática Resuelta:
+Esta base de datos permite gestionar eficientemente el proceso de turnos, desde la información de los clientes y empleados hasta la disponibilidad de medicos. Algunos aspectos que aborda incluyen:
+
+Registro de clientes y empleados involucrados en el proceso de reserva.
+Gestión de la disponibilidad de turnos por especialista.
+Registro detallado dell turno, incluyendo la fecha, cliente, especialista, empleado.
+
